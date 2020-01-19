@@ -1,0 +1,82 @@
+/*
+blue:#46c1bb
+red:#f25463
+*/
+*{
+    color: white;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    word-break: break-all;
+}
+body{
+    background-color: #1d1731;
+}
+#corpo{
+    width: 600px;
+    margin:  0 auto;
+}
+/* ----------------------topo------------------------ */
+#topo header{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+a.nav-item{
+    color: #46c1bb;
+    text-decoration: none;
+    font-size: larger;
+}
+a.nav-item:hover{
+    color: white;
+    text-decoration: underline;
+}
+/* ------------------------conteudo------------------------ */
+#conteudo #section-name{
+    padding: 15px 0;
+}
+#conteudo article{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+#conteudo header{
+    padding-bottom: 10px;
+}
+#conteudo header h2 a{
+    color: #f25463;
+    text-decoration: none;
+}
+#conteudo header h2 a:hover{
+    text-decoration: underline;
+}
+/* ------------------------tools------------------------ */
+.red{
+    color:#f25463;
+}
+#youtube{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-bottom: #f25463 2px dotted;
+    color: #46c1bb;
+    margin: 10px 0;
+}
+/* ------------------------Comentarios------------------------*/
+article#comentarios{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0 20px;
+}
+#comentarios-titulo{
+    padding: 10px 0;
+}
+.comentario{
+    padding: 15px 0 15px 0;
+    border-bottom: #f25463 2px dotted;
+}
+.comentario:last-child{
+    border-bottom: none;
+}
+.comentario h3{
+color: #46c1bb;
+}

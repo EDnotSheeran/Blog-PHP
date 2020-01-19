@@ -1,0 +1,23 @@
+<section>
+    <h1 id="section-name" class="red">{{titulo}}</h1>
+        <article>
+            <p>{{conteudo}}</p>
+        </article>
+        <br>
+        <!-- Comentarios -->
+        <h3 id="comentarios-titulo" class="red">Comentarios:</h3>
+        <article id="comentarios">
+            {% if comentario == false %}
+                <div class="comentario">
+                    <p>Nenhum comentario Encontrado</p>
+                </div>
+            {% endif %}
+            {% for comentario in comentarios %}
+                <div class="comentario">
+                    <h3>{{comentario.nome}}</h3>
+                    <p>{{comentario.mensagem}}</p>
+                </div>
+            {% endfor %}
+        </article>
+        <!-- Comentarios -->
+</section>
