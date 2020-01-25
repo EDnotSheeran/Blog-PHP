@@ -10,6 +10,9 @@ red:#f25463
     font-family: sans-serif;
     word-break: break-all;
 }
+input,textarea{
+    color: black;
+}
 body{
     background-color: #1d1731;
 }
@@ -80,4 +83,7 @@ article#comentarios{
 }
 .comentario h3{
 color: #46c1bb;
+}
+.fright{
+    float: right;
 }

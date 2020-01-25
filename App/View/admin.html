@@ -1,0 +1,22 @@
+<h1>Gerenciador de Conteudo</h1>
+
+<a href="/Blog-PHP/?pagina=admin&metodo=create">criar Publicacao</a>
+<hr>
+<br>
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Titulo</th>
+        <th>Alteracao</th>
+        <th>Delecao</th>
+    </tr>
+
+    {% for postagem in postagens %}
+    <tr>
+        <th>{{postagem.id}}</th>
+        <th>{{postagem.titulo}}</th>
+        <th><a href="?pagina=admin&metodo=change&id={{postagem.id}}">Alteracao</a></th>
+        <th><a href="?pagina=admin&metodo=delete&id={{postagem.id}}">Delecao</a></th>
+    </tr>
+    {% endfor %}
+</table>

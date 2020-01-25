@@ -15,7 +15,8 @@ id_postagem int(11) not null
 );
 
 /*Posts*/
- insert into postagem(titulo,conteudo) values('PHP','PHP é uma linguagem interpretada livre,
+insert into postagem(titulo,conteudo) values("Sopa de Morcego","teste");
+ /*insert into postagem(titulo,conteudo) values('PHP','PHP é uma linguagem interpretada livre,
  usada originalmente apenas para o desenvolvimento de aplicações presentes e atuantes no lado
  do servidor, capazes de gerar conteúdo dinâmico na World Wide Web. Figura entre as primeiras
  linguagens passíveis de inserção em documentos HTML, dispensando em muitos casos o uso de 
@@ -32,7 +33,7 @@ id_postagem int(11) not null
  fraca e multi-paradigma (protótipos, orientado a objeto, imperativo e, funcional). Juntamente com HTML 
  e CSS, o JavaScript é uma das três principais tecnologias da World Wide Web. JavaScript permite páginas 
  da Web interativas e, portanto, é uma parte essencial dos aplicativos da web. A grande maioria dos sites
- usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo. ');
+ usa, e todos os principais navegadores têm um mecanismo JavaScript dedicado para executá-lo. ');*/
 /*Commensts*/
  insert into comentario(nome,mensagem,id_postagem) values('Zezinho','muito bom o video',4);
  insert into comentario(nome,mensagem,id_postagem) values('anna','oi tudo bem',4);
