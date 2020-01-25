@@ -4,16 +4,6 @@
             <p>{{conteudo}}</p>
         </article>
         <br>
-        <!-- form comentarios -->
-            <form action="?pagina=post&metodo=addComent" method="post">
-                <span>Nome:</span><br>
-                <input name="nome" type="text"><br><br>
-                <span>Comentario:</span><br>
-                <textarea name="mensagem" cols="30" rows="10"></textarea><br><br>
-                <input type="hidden" name="id" value="{{id}}">
-                <input type="submit" value="enviar">
-            </form>
-        <!-- form comentarios -->
         <!-- Comentarios -->
         <h3 id="comentarios-titulo" class="red">Comentarios:</h3>
         <article id="comentarios">
@@ -30,4 +20,15 @@
             {% endfor %}
         </article>
         <!-- Comentarios -->
+
+        <!-- form comentarios -->
+        <form id="Post_Comment_Form" action="?pagina=post&metodo=addComent" method="post">
+            <span>Nome:</span><br>
+            <input name="nome" type="text"><br><br>
+            <span>Comentario:</span><br>
+            <textarea name="mensagem" cols="30" rows="5"></textarea><br><br>
+            <input type="hidden" name="id" value="{{id}}">
+            <input type="submit" value="enviar">
+        </form>
+    <!-- form comentarios -->
 </section>

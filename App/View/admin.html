@@ -1,10 +1,12 @@
+<br>
 <h1>Gerenciador de Conteudo</h1>
-
-<a href="/Blog-PHP/?pagina=admin&metodo=create">criar Publicacao</a>
+<br>
+<a class="btn" href="/Blog-PHP/?pagina=admin&metodo=create">criar Publicacao</a>
+<br><br>
 <hr>
 <br>
-<table>
-    <tr>
+<table id="tabela">
+    <tr class="head">
         <th>ID</th>
         <th>Titulo</th>
         <th>Alteracao</th>
@@ -15,8 +17,8 @@
     <tr>
         <th>{{postagem.id}}</th>
         <th>{{postagem.titulo}}</th>
-        <th><a href="?pagina=admin&metodo=change&id={{postagem.id}}">Alteracao</a></th>
-        <th><a href="?pagina=admin&metodo=delete&id={{postagem.id}}">Delecao</a></th>
+        <th class="alterar"><a href="?pagina=admin&metodo=change&id={{postagem.id}}">Alterar</a></th>
+        <th class="deletar"><a href="?pagina=admin&metodo=delete&id={{postagem.id}}">Deletar</a></th>
     </tr>
     {% endfor %}
 </table>

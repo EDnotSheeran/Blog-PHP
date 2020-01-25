@@ -87,3 +87,95 @@ color: #46c1bb;
 .fright{
     float: right;
 }
+#Post_Comment_Form{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px 10px;
+}
+#Post_Comment_Form span{
+    color: #f25463;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Post_Comment_Form input[type=text]{
+    width: 50%;
+    background-color: #1d1731;
+    border: 5px solid #1d1731;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Post_Comment_Form textarea{
+    width: 100%;
+    background-color: #1d1731;
+    border: 5px solid #1d1731;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Post_Comment_Form input[type=submit]{
+    border: 3px solid #1d1731;
+    background-color: #1d1731;
+    color: #46c1bb;
+    font-size: 20px;
+    font-weight: bold;
+}
+#Post_Comment_Form input[type=submit]:hover{
+    filter: invert();
+}
+.btn{
+    text-decoration: none;
+    padding: 5px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #46c1bb;
+    font-size: 20px;
+    font-weight: bold;
+    float: right;
+}
+.btn:hover{
+    filter: invert();
+}
+#tabela{
+width: 100%;
+}
+#tabela .head{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#tabela tr{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+#tabela th{
+    padding: 5px;
+}
+#tabela .alterar a{
+    color: #46c1bb;
+    text-decoration:  none;
+}
+#tabela .deletar a{
+    color: #f25463;
+    text-decoration:  none;
+
+}
+#Create input[type=text]{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: aliceblue;
+    font: 20px bold;
+}
+#Create textarea{
+    width: 100%;
+    border: none;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: aliceblue;
+    font: 20px bold;
+}
+
+#Create span{
+    color: #f25463;
+    font-size: 20px;
+    font-weight: bold;
+}
