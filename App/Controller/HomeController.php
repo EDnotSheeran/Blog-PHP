@@ -7,7 +7,7 @@ class HomeController{
 
             $loader = new \Twig\Loader\FilesystemLoader('App/View');
             $twig = new \Twig\Environment($loader);
-            $template = $twig->load('postagens.html');
+            $template = $twig->load('home.html');
 
             $parametros = array();
             $parametros['postagens'] = $colecPostagens;
