@@ -4,8 +4,9 @@ class ComentarioModel   {
 
     public static function selecionaComentarios($idPost){
         $conn = Connection::getConn();
-        $sql = "SELECT * FROM comentario WHERE id_postagem = '{$idPost}';";
+        $sql = "SELECT * FROM comentario WHERE id_postagem = :idPost;";
         $sql = $conn->prepare($sql);
+        $sql->bindValue(':idPost',$idPost);
         $sql->execute();
 
         $resultado = array();

@@ -23,8 +23,9 @@ class PostagemModel {
 
     public static function selecionaPorId($idPost){
         $con = Connection::getConn();
-        $sql = "SELECT * FROM postagem WHERE id = '{$idPost}';";
+        $sql = "SELECT * FROM postagem WHERE id = :idPost;";
         $sql = $con->prepare($sql);
+        $sql->bindValue(':idPost',$idPost);
         $sql->execute();
         
         $resultado = $sql->fetchObject('PostagemModel');
